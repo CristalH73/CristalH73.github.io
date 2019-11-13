@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav {
+	background-color: #FAA3C0;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 15%;
+	padding: 30px;
+	text-align: center;
+	display: inline-block;
+	position: fixed;
+}
+
+.my_picture {
+	background-image: url('../images/me.jpg');
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	padding: 28px;
+	display: inline-block;
+}
+
+ul {
+	padding: 0;
+}
+
+.nav li {
+	padding: 13px 0px;
+	font-weight: 800;
+	font-size: 20px;
+	list-style-type: none;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Opening Headline */
+
+.headline {
+	position: relative;
+	left: 15%;
+	padding-left: 85px;
+	width: 400px;
+}
+
+h1 {
+	font-size: 5.5em;
+	color: #f1c8fab3;
+	margin: 3% 0px;
+	border-bottom: 10px double #FAA3C0;
+	border-bottom-right-radius: 30%;
+}

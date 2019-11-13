@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- HEADER SECTION ---------- */
+header {
+    color: white;
+    background-color: #FAA3C0;
+    font-family: 'Bungee Inline';
+    width: 100%;
+    padding: 9%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: .2em;
+}
+
+header p {
+  font-size: 1.5em;
+  font-family: 'Rakkas';
+}
+
+/* ---------- BUTTONS SECTION ----------*/
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #FAA3C0;
+    margin: 0 5%;
+    margin-top: 100px;
+    padding: 20px 30px;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    color: white;
+    font-family: 'Rakkas';
+    font-size: 20px;
+    border: 1px white dashed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #f19db9;
+}

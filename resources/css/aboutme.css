@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rakkas';
+}
+
+h1, h2 {
+    font-family: 'Bungee Inline';
+    font-size: 3em;
+    letter-spacing: .2em;
+}
+
+/* ---------- NAVIGATION SECTION ---------- */
+
+nav {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #FAA3C0;
+    overflow-y: none;
+}
+
+.navi {
+    width: 100%;
+}
+
+.dropbutton {
+    width: 100%;
+    height: 22.4%;
+    background-color: #FAA3C0;
+    position: absolute;
+}
+
+.list {
+    width: 100%;
+    position: absolute;
+    top: 22.4%;
+}
+
+.navi a {
+    color: #FAA3C0;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+}
+
+.navi a:hover {
+    background-color: #FAA3C0;
+    border: 1px dashed white;
+    color: white;
+}
+
+/* ---------- HEADER SECTION ---------- */
+
+header {
+    margin-left: 15%;
+    padding-left: 1%;
+    background-color: #FAA3C0;
+    color: white;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    margin-left: 17%;
+    padding: 2%;
+    width: 80%;
+    border-radius: 5px;
+    background-color:  #FAA3C0;
+    color: white;
+}
+
+h2 {
+    margin-left: 17%;
+    background-color: white;
+    color: #FAA3C0;
+}
+
+/* ---------- SKILLS SECTION ---------- */
+
+.skills ul {
+    list-style: circle inside;
+}
+
+.skills img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.skills img:hover {
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* ---------- HOBBIES SECTION ---------- */
+
+h3 {
+    margin-left: 15px;
+    color: white;
+    font-size: 25px;
+}
+
+.hobby {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: #FAA3C0;
+}
+
+.hobby p {
+    font-size: 17px; 
+}
+
+/* ---------- CODEPEN SECTION ---------- */
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+.codepen {
+    margin: 15px;
+}
+
+.project img {
+    height: 180px;
+}
+
+.project img:hover {
+    opacity: 0.8;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* ---------- RESPONSIVE DESIGN SECTION ---------- */
+
+@media only screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+        text-align: center;
+    }
+
+    section, h2 {
+        margin-left: 30px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h3, h2 {
+        text-align: center;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .box {
+        justify-content: center;
+    }
+}
