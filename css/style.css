@@ -1,0 +1,178 @@
+/* ---------- SCSS VARIABLES ---------- */
+/* ---------- UNIVERSAL STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Book Antiqua", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dia {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 0;
+  z-index: -2;
+}
+
+.yellow {
+  background-color: #fcfccc;
+}
+
+.blue {
+  background-color: #a0e4ff;
+}
+
+.purple {
+  background-color: #e2def4;
+}
+
+.green {
+  background-color: #a9fbd7;
+}
+
+.pink {
+  background-color: #f4afab;
+}
+
+/* ---------- HEADER SECTION ---------- */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #f4afab;
+  opacity: 0.9;
+  overflow-y: hidden;
+}
+
+.nav li {
+  padding: 10px 10px;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+.nav li a {
+  color: #f4afab;
+}
+
+.nav li:hover {
+  background-color: #f4afab;
+}
+
+.nav li:hover a {
+  color: white;
+}
+
+.hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  margin-left: 7rem;
+}
+
+.job {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f4afab;
+}
+
+.name {
+  font-family: "Sitka Small", sans-serif;
+  font-size: 4.3rem;
+  font-weight: normal;
+  color: #0c0f0a;
+  margin-left: 3%;
+}
+
+.action {
+  font-family: "Book Antiqua", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #f4afab;
+  border: 0;
+  width: 170px;
+  padding: 10px;
+  margin-left: 210px;
+}
+
+.action:hover {
+  cursor: pointer;
+}
+
+.action a {
+  color: white;
+}
+
+/* --- HERO DESIGN --- */
+.hero-one {
+  width: 169px;
+  height: 169px;
+  top: -150px;
+  right: 110px;
+}
+
+.hero-two {
+  width: 220px;
+  height: 220px;
+  top: -40px;
+  right: -90px;
+}
+
+.hero-three {
+  width: 250px;
+  height: 250px;
+  top: 135px;
+  right: 69px;
+}
+
+.hero-four {
+  width: 120px;
+  height: 120px;
+  top: 395px;
+  right: 235px;
+}
+
+.hero-five {
+  width: 220px;
+  height: 220px;
+  top: 343px;
+  right: -90px;
+}
+
+.hero-six {
+  width: 200px;
+  height: 200px;
+  top: 510px;
+  right: 94px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,166 @@
+/* ---------- SCSS VARIABLES ---------- */
+$pink: #f4afab;
+$yellow: #fcfccc;
+$purple: #e2def4;
+$green: #a9fbd7;
+$blue: #a0e4ff;
+$black: #0c0f0a;
+
+/* ---------- UNIVERSAL STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Book Antiqua", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dia {
+  position: absolute;
+  transform: rotate(45deg);
+  border: 0;
+  z-index: -2;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+.blue {
+  background-color: $blue;
+}
+.purple {
+  background-color: $purple;
+}
+.green {
+  background-color: $green;
+}
+.pink {
+  background-color: $pink;
+}
+
+/* ---------- HEADER SECTION ---------- */
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: flex-end;
+  background-color: white;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid $pink;
+  opacity: 0.9;
+  overflow-y: hidden;
+}
+
+.nav li {
+  padding: 10px 10px;
+  transform: skewY(-5deg);
+}
+
+.nav li a {
+  color: $pink;
+}
+
+.nav li:hover {
+  background-color: $pink;
+}
+
+.nav li:hover a {
+  color: white;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 7rem;
+}
+
+.job {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $pink;
+}
+
+.name {
+  font-family: "Sitka Small", sans-serif;
+  font-size: 4.3rem;
+  font-weight: normal;
+  color: $black;
+  margin-left: 3%;
+}
+
+.action {
+  font-family: "Book Antiqua", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: $pink;
+  border: 0;
+  width: 170px;
+  padding: 10px;
+  margin-left: 210px;
+}
+
+.action:hover {
+  cursor: pointer;
+}
+
+.action a {
+  color: white;
+}
+
+/* --- HERO DESIGN --- */
+.hero-one {
+  width: 169px;
+  height: 169px;
+  top: -150px;
+  right: 110px;
+}
+
+.hero-two {
+  width: 220px;
+  height: 220px;
+  top: -40px;
+  right: -90px;
+}
+
+.hero-three {
+  width: 250px;
+  height: 250px;
+  top: 135px;
+  right: 69px;
+}
+
+.hero-four {
+  width: 120px;
+  height: 120px;
+  top: 395px;
+  right: 235px;
+}
+
+.hero-five {
+  width: 220px;
+  height: 220px;
+  top: 343px;
+  right: -90px;
+}
+
+.hero-six {
+  width: 200px;
+  height: 200px;
+  top: 510px;
+  right: 94px;
+}
