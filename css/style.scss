@@ -15,6 +15,7 @@ $black: #0c0f0a;
 }
 html {
   font-size: 10px;
+  /*scroll-behavior: smooth;*/
 }
 
 body {
@@ -49,6 +50,9 @@ a {
 }
 
 /* ---------- HEADER SECTION ---------- */
+#home {
+  height: 100vh;
+}
 
 .nav {
   display: flex;
@@ -96,7 +100,7 @@ a {
 }
 
 .name {
-  font-family: "Sitka Small", sans-serif;
+  font-family: "Sitka Small", serif;
   font-size: 4.3rem;
   font-weight: normal;
   color: $black;
@@ -111,7 +115,8 @@ a {
   border: 0;
   width: 170px;
   padding: 10px;
-  margin-left: 210px;
+  /* for desktop margin-left: 210px or 20%; */
+  margin-left: 80px;
 }
 
 .action:hover {
@@ -163,4 +168,155 @@ a {
   height: 200px;
   top: 510px;
   right: 94px;
+}
+
+/* ---------- EDUCATION SECTION ---------- */
+#education {
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Sitka Small", serif;
+  font-size: 4.3rem;
+  font-weight: normal;
+  margin-left: 7rem;
+}
+
+.uni {
+  font-size: 2.3rem;
+  margin-left: 5rem;
+  padding: 70px 0 105px;
+}
+
+.school {
+  font-family: "Sitka Small", serif;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-left: 10%;
+}
+
+.degree {
+  margin-left: 11%;
+}
+
+.courses-container {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.course-type {
+  font-family: "Sitka Small", serif;
+  font-weight: bold;
+}
+
+/* --- EDU DESIGN --- */
+.edu-one-right {
+  width: 450px;
+  height: 450px;
+  top: 930px;
+  right: -200px;
+  opacity: 0.3;
+}
+.edu-two-right {
+  width: 250px;
+  height: 250px;
+  top: 1030px;
+  right: 300px;
+  opacity: 0.3;
+}
+
+/* ---------- SKILLS SECTION ---------- */
+#skills {
+  margin-top: 7rem;
+}
+
+#skills .title {
+  margin-top: 110px;
+}
+
+.skills {
+  position: relative;
+  width: 100vw;
+  font-size: 2.15rem;
+  overflow: hidden;
+}
+
+.skill {
+  position: relative;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+}
+
+.skill-word {
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(-45deg) translate(-27px, 25px);
+}
+
+.html {
+  left: 300px;
+  top: 180px;
+}
+
+.css {
+  left: 220px;
+  top: 160px;
+}
+
+.scss {
+  left: 300px;
+  top: 140px;
+}
+
+.git {
+  left: 140px;
+  top: 40px;
+}
+
+.javasc {
+  left: 380px;
+  top: -140px;
+}
+
+.xd {
+  left: 220px;
+  top: -80px;
+}
+
+/* --- SKILLS DESIGN --- */
+.skills-one-left {
+  width: 160px;
+  height: 160px;
+  top: 1420px;
+  left: 190px;
+  box-shadow: -20px 20px rgba($blue, 0.37);
+}
+
+.skills-two-left {
+  width: 160px;
+  height: 160px;
+  top: 1550px;
+  left: 320px;
+  box-shadow: -20px 20px rgba($purple, 0.37);
+}
+
+.skills-three-left {
+  width: 160px;
+  height: 160px;
+  top: 1680px;
+  left: 190px;
+  box-shadow: -20px 20px rgba($green, 0.37);
+}
+
+.skills-four-left {
+  width: 160px;
+  height: 160px;
+  top: 1810px;
+  left: 60px;
+  box-shadow: -20px 20px rgba($yellow, 0.37);
 }
