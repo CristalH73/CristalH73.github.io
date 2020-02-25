@@ -70,6 +70,7 @@ a {
   border-bottom: 1px solid #f4afab;
   opacity: 0.9;
   overflow-y: hidden;
+  z-index: 5;
 }
 
 .nav li {
@@ -217,6 +218,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   font-size: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -343,5 +346,60 @@ a {
   left: 60px;
   -webkit-box-shadow: -20px 20px rgba(252, 252, 204, 0.37);
           box-shadow: -20px 20px rgba(252, 252, 204, 0.37);
+}
+
+/* ---------- PROJECTS SECTION ---------- */
+#projects {
+  padding-top: 100px;
+}
+
+.proj-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+  width: 100%;
+}
+
+.proj-text {
+  background-color: rgba(244, 175, 171, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.proj-type {
+  font-size: 3em;
+}
+
+.description {
+  font-size: 2em;
+  padding: 10px 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.project img {
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */

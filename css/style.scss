@@ -66,6 +66,7 @@ a {
   border-bottom: 1px solid $pink;
   opacity: 0.9;
   overflow-y: hidden;
+  z-index: 5;
 }
 
 .nav li {
@@ -203,6 +204,7 @@ a {
 .courses-container {
   display: flex;
   font-size: 2rem;
+  justify-content: space-around;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -319,4 +321,47 @@ a {
   top: 1810px;
   left: 60px;
   box-shadow: -20px 20px rgba($yellow, 0.37);
+}
+
+/* ---------- PROJECTS SECTION ---------- */
+#projects {
+  padding-top: 100px;
+}
+
+.proj-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  width: 100%;
+}
+
+.proj-text {
+  background-color: rgba($pink, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.proj-type {
+  font-size: 3em;
+}
+
+.description {
+  font-size: 2em;
+  padding: 10px 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.project img {
+  width: 300px;
 }
