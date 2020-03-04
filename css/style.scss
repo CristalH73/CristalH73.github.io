@@ -19,11 +19,16 @@ html {
 }
 
 body {
-  font-family: "Book Antiqua", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+*::after,
+*::before {
+  content: "";
 }
 
 .dia {
@@ -47,6 +52,22 @@ a {
 }
 .pink {
   background-color: $pink;
+}
+
+.yellow-border {
+  border: 2px solid $yellow;
+}
+.blue-border {
+  border: 2px solid $blue;
+}
+.purple-border {
+  border: 2px solid $purple;
+}
+.green-border {
+  border: 2px solid $green;
+}
+.pink-border {
+  border: 2px solid $pink;
 }
 
 /* ---------- HEADER SECTION ---------- */
@@ -80,10 +101,10 @@ a {
 
 .nav li:hover {
   background-color: $pink;
-}
 
-.nav li:hover a {
-  color: white;
+  a {
+    color: white;
+  }
 }
 
 .hero-info {
@@ -109,7 +130,7 @@ a {
 }
 
 .action {
-  font-family: "Book Antiqua", serif;
+  font-family: "Raleway", serif;
   font-size: 2rem;
   font-weight: bold;
   background-color: $pink;
@@ -242,7 +263,7 @@ a {
 .skills {
   position: relative;
   width: 100vw;
-  font-size: 2.15rem;
+  font-size: 2rem;
   overflow: hidden;
 }
 
@@ -326,6 +347,14 @@ a {
 /* ---------- PROJECTS SECTION ---------- */
 #projects {
   padding-top: 100px;
+
+  .title {
+    color: $pink;
+    font-size: 10rem;
+    font-weight: bold;
+    opacity: 0.3;
+    position: relative;
+  }
 }
 
 .proj-container {
@@ -337,7 +366,9 @@ a {
 }
 
 .proj-text {
-  background-color: rgba($pink, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   text-align: center;
   padding: 20px;
   margin-bottom: 40px;
@@ -345,23 +376,80 @@ a {
 }
 
 .proj-type {
-  font-size: 3em;
+  font-size: 2.5em;
+  font-family: "Sitka Small";
+  display: inline-block;
 }
 
 .description {
   font-size: 2em;
-  padding: 10px 5px;
+  padding: 0 5px;
   margin: 10px;
-  background-color: white;
+  display: inline-block;
+  //background-color: rgba($pink, 0.9);
+  font-weight: bold;
+  border-bottom: 2px solid $pink;
 }
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.project img {
-  width: 300px;
+.project {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+
+  img {
+    width: 400px;
+  }
+
+  .hover-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid $pink;
+    top: 0;
+    opacity: 0;
+    transition: 0.4s ease;
+    text-align: center;
+  }
+
+  .desc {
+    color: $pink;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .view-code {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: $pink;
+    padding: 5px 10px;
+  }
+
+  &:hover {
+    .hover-overlay {
+      opacity: 1;
+    }
+  }
 }
+
+/* ---------- MEDIA QUERIES SECTION ---------- */

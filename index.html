@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/style.css" type="text/css" rel="stylesheet" />
   </head>
 
@@ -17,6 +21,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <!--HERO SECTION-->
       <div class="hero-info">
         <p class="job">Front End Web Developer</p>
         <h1 class="name">Cristal Hernandez</h1>
@@ -31,6 +37,8 @@
         <div class="dia blue hero-six"></div>
       </div>
     </header>
+
+    <!--EDUCATION SECTION-->
     <section id="education">
       <h2 class="title">Education</h2>
       <div class="uni">
@@ -60,25 +68,27 @@
         <div class="dia yellow edu-two-right"></div>
       </div>
     </section>
+
+    <!--SKILLS SECTION-->
     <section id="skills">
       <h2 class="title">Skills</h2>
       <div class="skills">
-        <div class="skill purple html">
+        <div class="skill purple-border html">
           <p class="skill-word">HTML</p>
         </div>
-        <div class="skill blue css">
+        <div class="skill blue-border css">
           <p class="skill-word">CSS</p>
         </div>
-        <div class="skill green scss">
+        <div class="skill green-border scss">
           <p class="skill-word">SCSS</p>
         </div>
-        <div class="skill pink git">
+        <div class="skill pink-border git">
           <p class="skill-word">Git</p>
         </div>
-        <div class="skill yellow javasc">
+        <div class="skill yellow-border javasc">
           <p class="skill-word">JavaScript</p>
         </div>
-        <div class="skill purple xd">
+        <div class="skill purple-border xd">
           <p class="skill-word">AdobeXd</p>
         </div>
       </div>
@@ -89,26 +99,45 @@
         <div class="dia yellow skills-four-left"></div>
       </div>
     </section>
+
+    <!--PROJECTS SECTION-->
     <section id="projects">
       <h2 class="title">Projects</h2>
       <div class="proj-container">
         <div class="proj-text">
           <h3 class="proj-type">Codepen</h3>
           <p class="description">
-            Tutorials modified by my touch and original ideas
+            Tutorials modified with my touch and original ideas
           </p>
         </div>
+
         <div class="projects">
-          <a
-            class="project"
-            href="https://codepen.io/CristalCreates/pen/wvvJKoP"
-            ><img src="resources/images/smiley-proj.png" alt="worried smiley"
-          /></a>
-          <a
-            class="project"
-            href="https://codepen.io/CristalCreates/pen/LYYLYyK"
-            ><img src="resources/images/bee-pic-proj.png" alt="camera taking picture of bee"
-          /></a>
+          <div class="project">
+            <img src="resources/images/smiley-proj.png" alt="worried smiley" />
+            <div class="hover-overlay">
+              <p class="desc">Worried smiley made using HTML/CSS</p>
+              <a
+                class="view-code"
+                href="https://codepen.io/CristalCreates/pen/wvvJKoP"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img
+              src="resources/images/bee-pic-proj.png"
+              alt="camera taking picture of bee"
+            />
+            <div class="hover-overlay">
+              <p class="desc">Taking a bee's picture using HTML/CSS</p>
+              <a
+                class="view-code"
+                href="https://codepen.io/CristalCreates/pen/LYYLYyK"
+                >View project
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="proj-container">
@@ -118,23 +147,64 @@
             Challenges to create a page as closely to the design as possible
           </p>
         </div>
+
         <div class="projects">
-          <div class="projects">
-            <a
-              class="project"
-              href="https://cristalh73.github.io/four_card_feature/"
-              ><img src="resources/images/four-card-feat-proj.png" alt=""
-            /></a>
-            <a
-              class="project"
-              href="https://cristalh73.github.io/single_price_grid/"
-              ><img src="resources/images/single-grid-proj.png" alt=""
-            /></a>
-            <a
-              class="project"
-              href="https://github.com/CristalH73/huddle_landing_single_intro"
-              ><img src="resources/images/huddle-landing-proj.png" alt=""
-            /></a>
+          <div class="project">
+            <img src="resources/images/four-card-feat-proj.png" alt="" />
+            <div class="hover-overlay">
+              <p class="desc">Four card feature page using HTML/SCSS Flexbox</p>
+              <div class="links">
+                <a
+                  class="view-code"
+                  href="https://cristalh73.github.io/four_card_feature/"
+                  >View project
+                </a>
+                <a
+                  class="view-code"
+                  href="https://github.com/CristalH73/four_card_feature"
+                  >View code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="resources/images/single-grid-proj.png" alt="" />
+            <div class="hover-overlay">
+              <p class="desc">Single price grid page using HTML/SCSS Flexbox</p>
+              <div class="links">
+                <a
+                  class="view-code"
+                  href="https://cristalh73.github.io/single_price_grid/"
+                  >View project
+                </a>
+                <a
+                  class="view-code"
+                  href="https://github.com/CristalH73/single_price_grid"
+                  >View code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="resources/images/huddle-landing-proj.png" alt="" />
+            <div class="hover-overlay">
+              <p class="desc">Landing page using HTML/SCSS Bootstrap</p>
+              <div class="links">
+                <a
+                  class="view-code"
+                  href="https://github.com/CristalH73/huddle_landing_single_intro"
+                  >View project
+                </a>
+                <a
+                  class="view-code"
+                  href="https://github.com/CristalH73/huddle_landing_single_intro"
+                  >View code
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
