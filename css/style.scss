@@ -26,6 +26,16 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-family: "Sitka Small";
+  font-size: 7rem;
+  font-weight: bold;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* ---------- DESIGN UNIVERSAL STYLES ---------- */
+
 *::after,
 *::before {
   content: "";
@@ -101,6 +111,7 @@ a {
 
 .nav li:hover {
   background-color: $pink;
+  transition: 0.4s ease;
 
   a {
     color: white;
@@ -119,6 +130,7 @@ a {
   font-size: 1.8rem;
   font-weight: bold;
   color: $pink;
+  margin-left: 1%;
 }
 
 .name {
@@ -130,7 +142,7 @@ a {
 }
 
 .action {
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   background-color: $pink;
@@ -138,18 +150,22 @@ a {
   width: 170px;
   padding: 10px;
   /* for desktop margin-left: 210px or 20%; */
-  margin-left: 80px;
-}
+  margin-left: 6%;
 
-.action:hover {
-  cursor: pointer;
-}
+  a {
+    color: white;
+  }
 
-.action a {
-  color: white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /* --- HERO DESIGN --- */
+.hero-design .dia {
+  opacity: 0.7;
+}
+
 .hero-one {
   width: 169px;
   height: 169px;
@@ -196,13 +212,10 @@ a {
 #education {
   padding-top: 100px;
   height: 100vh;
-}
 
-.title {
-  font-family: "Sitka Small", serif;
-  font-size: 4.3rem;
-  font-weight: normal;
-  margin-left: 7rem;
+  .title {
+    color: $purple;
+  }
 }
 
 .uni {
@@ -228,6 +241,11 @@ a {
   justify-content: space-around;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  .rel-courses,
+  .other-courses {
+    margin: 10px;
+  }
 }
 
 .course-type {
@@ -239,14 +257,14 @@ a {
 .edu-one-right {
   width: 450px;
   height: 450px;
-  top: 930px;
+  top: 950px;
   right: -200px;
   opacity: 0.3;
 }
 .edu-two-right {
   width: 250px;
   height: 250px;
-  top: 1030px;
+  top: 1050px;
   right: 300px;
   opacity: 0.3;
 }
@@ -254,6 +272,10 @@ a {
 /* ---------- SKILLS SECTION ---------- */
 #skills {
   margin-top: 7rem;
+
+  .title {
+    color: $blue;
+  }
 }
 
 #skills .title {
@@ -282,67 +304,67 @@ a {
 }
 
 .html {
-  left: 300px;
-  top: 180px;
+  left: 325px;
+  top: 240px;
 }
 
 .css {
-  left: 220px;
-  top: 160px;
+  left: 245px;
+  top: 220px;
 }
 
 .scss {
-  left: 300px;
-  top: 140px;
+  left: 325px;
+  top: 200px;
 }
 
 .git {
-  left: 140px;
-  top: 40px;
+  left: 165px;
+  top: 100px;
 }
 
 .javasc {
-  left: 380px;
-  top: -140px;
+  left: 405px;
+  top: -80px;
 }
 
 .xd {
-  left: 220px;
-  top: -80px;
+  left: 245px;
+  top: -20px;
 }
 
 /* --- SKILLS DESIGN --- */
 .skills-one-left {
   width: 160px;
   height: 160px;
-  top: 1420px;
-  left: 190px;
+  top: 1700px;
+  left: 40px;
   box-shadow: -20px 20px rgba($blue, 0.37);
 }
 
 .skills-two-left {
   width: 160px;
   height: 160px;
-  top: 1550px;
-  left: 320px;
+  top: 1830px;
+  left: 170px;
   box-shadow: -20px 20px rgba($purple, 0.37);
 }
 
 .skills-three-left {
   width: 160px;
   height: 160px;
-  top: 1680px;
-  left: 190px;
+  top: 1960px;
+  left: 40px;
   box-shadow: -20px 20px rgba($green, 0.37);
 }
-
+/*
 .skills-four-left {
   width: 160px;
   height: 160px;
-  top: 1810px;
+  top: 2110px;
   left: 60px;
   box-shadow: -20px 20px rgba($yellow, 0.37);
-}
+}*/
 
 /* ---------- PROJECTS SECTION ---------- */
 #projects {
@@ -350,10 +372,6 @@ a {
 
   .title {
     color: $pink;
-    font-size: 10rem;
-    font-weight: bold;
-    opacity: 0.3;
-    position: relative;
   }
 }
 
@@ -367,26 +385,23 @@ a {
 
 .proj-text {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 .proj-type {
   font-size: 2.5em;
   font-family: "Sitka Small";
-  display: inline-block;
 }
 
 .description {
   font-size: 2em;
   padding: 0 5px;
   margin: 10px;
-  display: inline-block;
-  //background-color: rgba($pink, 0.9);
   font-weight: bold;
   border-bottom: 2px solid $pink;
 }
@@ -405,7 +420,7 @@ a {
   margin: 20px;
 
   img {
-    width: 400px;
+    width: 280px;
   }
 
   .hover-overlay {

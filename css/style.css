@@ -21,6 +21,15 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-family: "Sitka Small";
+  font-size: 7rem;
+  font-weight: bold;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* ---------- DESIGN UNIVERSAL STYLES ---------- */
 *::after,
 *::before {
   content: "";
@@ -110,6 +119,8 @@ a {
 
 .nav li:hover {
   background-color: #f4afab;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .nav li:hover a {
@@ -135,6 +146,7 @@ a {
   font-size: 1.8rem;
   font-weight: bold;
   color: #f4afab;
+  margin-left: 1%;
 }
 
 .name {
@@ -146,7 +158,7 @@ a {
 }
 
 .action {
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   background-color: #f4afab;
@@ -154,18 +166,22 @@ a {
   width: 170px;
   padding: 10px;
   /* for desktop margin-left: 210px or 20%; */
-  margin-left: 80px;
-}
-
-.action:hover {
-  cursor: pointer;
+  margin-left: 6%;
 }
 
 .action a {
   color: white;
 }
 
+.action:hover {
+  cursor: pointer;
+}
+
 /* --- HERO DESIGN --- */
+.hero-design .dia {
+  opacity: 0.7;
+}
+
 .hero-one {
   width: 169px;
   height: 169px;
@@ -214,11 +230,8 @@ a {
   height: 100vh;
 }
 
-.title {
-  font-family: "Sitka Small", serif;
-  font-size: 4.3rem;
-  font-weight: normal;
-  margin-left: 7rem;
+#education .title {
+  color: #e2def4;
 }
 
 .uni {
@@ -252,6 +265,11 @@ a {
       flex-wrap: wrap;
 }
 
+.courses-container .rel-courses,
+.courses-container .other-courses {
+  margin: 10px;
+}
+
 .course-type {
   font-family: "Sitka Small", serif;
   font-weight: bold;
@@ -261,7 +279,7 @@ a {
 .edu-one-right {
   width: 450px;
   height: 450px;
-  top: 930px;
+  top: 950px;
   right: -200px;
   opacity: 0.3;
 }
@@ -269,7 +287,7 @@ a {
 .edu-two-right {
   width: 250px;
   height: 250px;
-  top: 1030px;
+  top: 1050px;
   right: 300px;
   opacity: 0.3;
 }
@@ -277,6 +295,10 @@ a {
 /* ---------- SKILLS SECTION ---------- */
 #skills {
   margin-top: 7rem;
+}
+
+#skills .title {
+  color: #a0e4ff;
 }
 
 #skills .title {
@@ -307,41 +329,41 @@ a {
 }
 
 .html {
-  left: 300px;
-  top: 180px;
+  left: 325px;
+  top: 240px;
 }
 
 .css {
-  left: 220px;
-  top: 160px;
+  left: 245px;
+  top: 220px;
 }
 
 .scss {
-  left: 300px;
-  top: 140px;
+  left: 325px;
+  top: 200px;
 }
 
 .git {
-  left: 140px;
-  top: 40px;
+  left: 165px;
+  top: 100px;
 }
 
 .javasc {
-  left: 380px;
-  top: -140px;
+  left: 405px;
+  top: -80px;
 }
 
 .xd {
-  left: 220px;
-  top: -80px;
+  left: 245px;
+  top: -20px;
 }
 
 /* --- SKILLS DESIGN --- */
 .skills-one-left {
   width: 160px;
   height: 160px;
-  top: 1420px;
-  left: 190px;
+  top: 1700px;
+  left: 40px;
   -webkit-box-shadow: -20px 20px rgba(160, 228, 255, 0.37);
           box-shadow: -20px 20px rgba(160, 228, 255, 0.37);
 }
@@ -349,8 +371,8 @@ a {
 .skills-two-left {
   width: 160px;
   height: 160px;
-  top: 1550px;
-  left: 320px;
+  top: 1830px;
+  left: 170px;
   -webkit-box-shadow: -20px 20px rgba(226, 222, 244, 0.37);
           box-shadow: -20px 20px rgba(226, 222, 244, 0.37);
 }
@@ -358,21 +380,20 @@ a {
 .skills-three-left {
   width: 160px;
   height: 160px;
-  top: 1680px;
-  left: 190px;
+  top: 1960px;
+  left: 40px;
   -webkit-box-shadow: -20px 20px rgba(169, 251, 215, 0.37);
           box-shadow: -20px 20px rgba(169, 251, 215, 0.37);
 }
 
+/*
 .skills-four-left {
   width: 160px;
   height: 160px;
-  top: 1810px;
+  top: 2110px;
   left: 60px;
-  -webkit-box-shadow: -20px 20px rgba(252, 252, 204, 0.37);
-          box-shadow: -20px 20px rgba(252, 252, 204, 0.37);
-}
-
+  box-shadow: -20px 20px rgba($yellow, 0.37);
+}*/
 /* ---------- PROJECTS SECTION ---------- */
 #projects {
   padding-top: 100px;
@@ -380,10 +401,6 @@ a {
 
 #projects .title {
   color: #f4afab;
-  font-size: 10rem;
-  font-weight: bold;
-  opacity: 0.3;
-  position: relative;
 }
 
 .proj-container {
@@ -405,29 +422,28 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 .proj-type {
   font-size: 2.5em;
   font-family: "Sitka Small";
-  display: inline-block;
 }
 
 .description {
   font-size: 2em;
   padding: 0 5px;
   margin: 10px;
-  display: inline-block;
   font-weight: bold;
   border-bottom: 2px solid #f4afab;
 }
@@ -456,7 +472,7 @@ a {
 }
 
 .project img {
-  width: 400px;
+  width: 280px;
 }
 
 .project .hover-overlay {
