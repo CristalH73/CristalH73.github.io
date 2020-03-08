@@ -165,7 +165,6 @@ a {
   border: 0;
   width: 170px;
   padding: 10px;
-  /* for desktop margin-left: 210px or 20%; */
   margin-left: 6%;
 }
 
@@ -386,14 +385,6 @@ a {
           box-shadow: -20px 20px rgba(169, 251, 215, 0.37);
 }
 
-/*
-.skills-four-left {
-  width: 160px;
-  height: 160px;
-  top: 2110px;
-  left: 60px;
-  box-shadow: -20px 20px rgba($yellow, 0.37);
-}*/
 /* ---------- PROJECTS SECTION ---------- */
 #projects {
   padding-top: 100px;
@@ -512,6 +503,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;

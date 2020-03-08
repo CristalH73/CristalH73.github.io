@@ -149,7 +149,6 @@ a {
   border: 0;
   width: 170px;
   padding: 10px;
-  /* for desktop margin-left: 210px or 20%; */
   margin-left: 6%;
 
   a {
@@ -357,14 +356,6 @@ a {
   left: 40px;
   box-shadow: -20px 20px rgba($green, 0.37);
 }
-/*
-.skills-four-left {
-  width: 160px;
-  height: 160px;
-  top: 2110px;
-  left: 60px;
-  box-shadow: -20px 20px rgba($yellow, 0.37);
-}*/
 
 /* ---------- PROJECTS SECTION ---------- */
 #projects {
@@ -448,6 +439,7 @@ a {
   .links {
     display: flex;
     width: 100%;
+    justify-content: space-around;
     justify-content: space-evenly;
     margin-top: 20px;
   }
