@@ -530,5 +530,55 @@ a {
   opacity: 1;
 }
 
+/* ---------- FOOTER SECTION ---------- */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4afab;
+  color: white;
+  opacity: 0.9;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer .copyright {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 /* ---------- MEDIA QUERIES SECTION ---------- */
+@media only screen and (min-width: 575px) {
+  .title {
+    text-align: left;
+    margin-left: 15rem;
+  }
+}
+
+@media only screen and (min-width: 775px) {
+  .title {
+    font-size: 10rem;
+  }
+  .hero-design .dia {
+    opacity: 1;
+  }
+  .edu-one-right {
+    top: 990px;
+  }
+  .edu-two-right {
+    top: 1090px;
+  }
+  .skills-one-left {
+    top: 1740px;
+  }
+  .skills-two-left {
+    top: 1870px;
+  }
+  .skills-three-left {
+    top: 2000px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
